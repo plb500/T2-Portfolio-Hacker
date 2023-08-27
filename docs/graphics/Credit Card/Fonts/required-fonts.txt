@@ -1,0 +1,6 @@
+Fonts to be installed for the credit card SVG file:
+
+credit-card.zip         - CREDC___.ttf
+liberation-sans.zip     - LiberationSans-Bold.ttf
+Montserrat.zip          - Montserrat-Black.ttf
+
