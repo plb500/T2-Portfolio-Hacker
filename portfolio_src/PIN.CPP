@@ -5,6 +5,7 @@
 #include <mem.h>
 #include <time.h>
 #include <string.h>
+#include "hardware.h"
 
 
 #define USER_INT                (0x61)
@@ -14,21 +15,20 @@
 #define SOUND_ALARM             (2)
 
 #define MAX_PIN_LENGTH          (38)
-#define NUM_PIN_STRINGS         (5)
+#define NUM_PIN_STRINGS         (6)
 char *PIN_STRINGS[NUM_PIN_STRINGS] = {
     "12345678901234567890123457890123456780",
     "65989856487897878454548788945445454544",
     "67987895655545456423100026487998545714",
-    "53456872678798764358792345837645783476",
-    "42032874436518408267250398259609473357"
+    "65989856487897878454548788945445454544",
+    "65989856487897878454548788945445454544",
+    "67987895655545456423100026487998545714"
 };
-const char *FINAL_PIN = "9003";
-
+char *FINAL_PIN = "9003";
 
 void emit_click();
 void splash_screen();
 void pin_scan();
-
 
 // Play key-click sound
 void emit_click() {
@@ -91,9 +91,9 @@ void pin_scan(const char *finalPIN) {
 
             scrollIndex++;
             if(scrollIndex >= NUM_PIN_STRINGS) {
-                // If we have displayed all of the "random" PIN strings, shorten them for
-                // the next round by one or two characters ("shorten" in this context just
-                // means increase the amount of spaces at the end)
+                // If we have displayed all of the "random" PIN strings in this batch,
+                // shorten them for the next batch by one or two characters ("shorten" in
+                // this context just means increase the amount of spaces at the end)
                 stringLength -= (scrollDisplayCount++ & 1) ? 1 : 2;
 
                 for(int i = 0; i < NUM_PIN_STRINGS; ++i) {
@@ -121,14 +121,70 @@ void pin_scan(const char *finalPIN) {
         fflush(stdout);
 
         if(!done) {
-            while(clock() < nextDisplayTime);
+            SLEEP_UNTIL(nextDisplayTime)
         }        
     } while(!done);
 
     fprintf(stdout, "\nPIN IDENTIFICATION NUMBER: %s\n", finalPIN);
 }
 
+void wait_for_hacker_box_pin(char *finalPin) {
+    clock_t displayTimePeriod = ((CLOCKS_PER_SEC * 20) / 1000);
+    clock_t pinReadTimePeriod = ((CLOCKS_PER_SEC * 60) / 1000);
+    
+    clock_t nextDisplayTime;
+    clock_t pinReadTime;
+    
+    int scrollIndex = 0;
+    int gotCurrentPIN = 0;
+
+    // Keep scrolling until we are informed that the box has the PIN
+    while(!hacker_box_ready()) {
+        nextDisplayTime = (clock() + displayTimePeriod);
+
+        emit_click();
+        fprintf(stdout, "%s\n", PIN_STRINGS[scrollIndex]);
+        fflush(stdout);
+
+        scrollIndex = ((scrollIndex + 1) % NUM_PIN_STRINGS);
+        
+        SLEEP_UNTIL(nextDisplayTime)
+    }
+    
+    // Box has PIN, keep scrolling until we have obtained all PIN values
+    for(int i = 0; i < 4; ++i) {
+        gotCurrentPIN = 0;
+        request_pin_digit(i);
+        pinReadTime = (clock() + pinReadTimePeriod);
+
+        while(!gotCurrentPIN) {
+            if(clock() > pinReadTime) {
+               finalPin[i] = read_pin_digit();
+            
+                break;
+            }        
+            nextDisplayTime = (clock() + displayTimePeriod);
+
+            emit_click();
+            fprintf(stdout, "%s\n", PIN_STRINGS[scrollIndex]);
+            fflush(stdout);
+
+            scrollIndex = ((scrollIndex + 1) % NUM_PIN_STRINGS);
+        
+            SLEEP_UNTIL(nextDisplayTime)
+        }
+    }
+}
+
 void main() {
+    init_ports();
+    reset_hacker_box();
+
     splash_screen();
+
+    wait_for_hacker_box_pin(FINAL_PIN);
+
     pin_scan(FINAL_PIN);
+    
+    shutdown_hacker_box();
 }
