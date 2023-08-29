@@ -3,7 +3,7 @@
 The easiest way to transfer files onto an Atari Portfolio is by using the Smart Parallel Interface and the file transfer utility, with a Raspberry Pi acting as the file transfer source.
 A Pi Zero running SSH will be more than sufficient for this. When correctly wired up it will look something like the following:
 
-![Picture of wired up Pi Zero for rpfolio](/docs/gfx/images/rpfolio-pizero.jpeg)
+![Picture of wired up Pi Zero for rpfolio](/docs/graphics/images/rpfolio-pizero.jpeg)
 
 The pin wiring/mappings are as follows:
 
@@ -19,7 +19,7 @@ The pin wiring/mappings are as follows:
 +-------------+----------+
 ```
 
-![rpfolio Wiring diagram of Raspberry Pi Zero](/docs/gfx/images/pofo-rpfolio.svg)
+![rpfolio Wiring diagram of Raspberry Pi Zero](/docs/graphics/images/pofo-rpfolio.svg)
 
 To setup the Pi Zerp you will need to install Raspbian Pi Buster Lite on the Pi as later versions are missing the required wiringPi utilities
 Once the Pi is setup and wifi/SSH etc configured, SSH in and use the following commands:
