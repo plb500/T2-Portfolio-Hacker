@@ -1,17 +1,18 @@
 #include "hardware.h"
+
+#include "sleep.h"
 #include <dos.h>
 
 
 #define PORT_A                  (0x8078)
-#define PORT_B                  (0x8079)
+#define PORT_B                  (0x8079)        // Currently not used
 #define PORT_C                  (0x807A)
 #define CONTROL_REGISTER        (0x807B)
 
-// Control byte flags
+// Hardware control byte flags
 #define BOX_ACTIVE              (1 << 5)
 #define NO_PIN_READ             (1 << 4)
 #define BOX_CONTROL_IDLE        (BOX_ACTIVE | NO_PIN_READ)
-
 
 // PORT A is used for input from the hacker box
 // PORT B is currently unused so direction doesn't matter
@@ -118,7 +119,6 @@ char read_pin_digit() {
     outportb(PORT_C, 0xFF);    
     
     return digit_to_char(digitValue);
-
 }
 
 int hacker_box_ready() {
