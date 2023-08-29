@@ -58,6 +58,9 @@ Notes:
 ```
 
 To use this utility, from the Portfolio, enter the "Set up" menu (Atari + S keys) and select File transfer -> Server. The Portfolio screen should now say "Waiting for connection".
+![Images of Atari Portfolio showing file transfer steps](/docs/graphics/images/pf-file-transfer.jpeg)
+
+
 You can then begin to transfer files from the Pi using rpfolio with something like:
 
 ```
