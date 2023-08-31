@@ -1,19 +1,20 @@
-#include "pin_reader.h"
 #include "portfolio_parallel_port.h"
+#include "bluetooth_card_reader.h"
 
 
-PinReader pinReader;
+BluetoothCardReader btReader(14, 15);
+
 PortfolioParallelPort parallelPort = {
-    {2, 3, 4},          // Pins for outputting PIN reader status
-    {5, 6, 7, 8},       // Pins for outputting PIN digit values
-    9,                  // Pin for indicating outputted PIN is valid
-    {10, 11, 12, 13}    // Control pins    
+    Array<char, 3>({2, 3, 4}),          // Pins for outputting PIN reader status
+    Array<char, 4>({5, 6, 7, 8}),       // Pins for outputting PIN digit values
+    9,                                  // Pin for indicating outputted PIN is valid
+    Array<char, 4>({10, 11, 12, 13})    // Control pins    
 };
 
 
 void setup() {
-    init_pin_reader(&pinReader);
-    init_parallel_port(&parallelPort);
+    btReader.init();
+    parallelPort.init();
     
     // For testing
     Serial.begin(9600);
@@ -21,48 +22,64 @@ void setup() {
 
 void loop() {
     // If we are inactive don't process anything
-    if(reader_deactivated(&parallelPort)) {
-        reset_pin_reader(&pinReader);
+    if(parallelPort.isHardwareInactive()) {
+        btReader.reset();
         return;
     }
 
     // Otherwise proceed and attempt to obtain pin, respond to requests etc
-    update_pin_reader(&pinReader);
-    if(pinReader.m_status == PIN_READER_PIN_OBTAINED) {
-        Serial.print("Box active. PIN obtained:");
-        Serial.print(pinReader.m_pinDigits[0]);
-        Serial.print(pinReader.m_pinDigits[1]);
-        Serial.print(pinReader.m_pinDigits[2]);
-        Serial.println(pinReader.m_pinDigits[3]);
+    switch(btReader.getStatus()) {
+        case BT_MODULE_NO_PIN:
+            btReader.triggerPINRead();
+            break;
+            
+        case BT_MODULE_READING_PIN:
+            // No action required
+            break;
+            
+        case BT_MODULE_HAS_VALID_PIN:
+            // Maybe cache the PIN? Seems redundant since we'd have to reset this on error anyway
+            Serial.print("Box active. PIN obtained:");
+            Serial.print(btReader.getPINDigit(0), DEC);
+            Serial.print(btReader.getPINDigit(1), DEC);
+            Serial.print(btReader.getPINDigit(2), DEC);
+            Serial.println(btReader.getPINDigit(3), DEC);
+            break;
+            
+        case BT_MODULE_PIN_ERROR:
+            // Try re-triggering?
+            btReader.triggerPINRead();
+            break;
     }
-
+    btReader.update();
+    
     // Output reader status
-    output_reader_status(&parallelPort, pinReader.m_status);
+    parallelPort.outputReaderStatus(btReader.getStatus());
 
     // Check if a PIN digit has been requested
-    int requestedDigit = pin_digit_requested(&parallelPort);
-    if(requestedDigit != INVALID_PIN_DIGIT_POSITION) {
+    int requestedDigit = parallelPort.pinDigitRequested();
+    if(requestedDigit != PortfolioParallelPort::INVALID_PIN_DIGIT_POSITION) {
         if(
-            (pinReader.m_status == PIN_READER_PIN_OBTAINED) && 
-            (requestedDigit < pinReader.m_pinLength)
+            (btReader.getStatus() == BT_MODULE_HAS_VALID_PIN) && 
+            (requestedDigit < BluetoothCardReader::MAX_PIN_LENGTH)
         ) {
             Serial.print("Pin digit ");
             Serial.print(requestedDigit);
             Serial.println(" requested");
 
-            char digitValue = pinReader.m_pinDigits[requestedDigit];
-            output_pin_digit(&parallelPort, digitValue);
+            char digitValue = btReader.getPINDigit(requestedDigit);
+            parallelPort.outputPINDigit(digitValue);
         } else {
             Serial.println("ERROR - PIN digit was requested but reader was unable to fulfill request");
 
             Serial.print("Reader status: ");
-            Serial.println(pinReader.m_status);
+            Serial.println(btReader.getStatus());
         
             Serial.print("Requested digit: ");
             Serial.println(requestedDigit);
 
             Serial.print("Current PIN length: ");
-            Serial.println(pinReader.m_pinLength);
+            Serial.println(BluetoothCardReader::MAX_PIN_LENGTH);
         }
     }
 }

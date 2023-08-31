@@ -1,9 +1,7 @@
 #ifndef __PORTFOLIO_PARALLEL_PORT__H
 #define __PORTFOLIO_PARALLEL_PORT__H
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+#include <Array.h>
 
 //
 //              HARDWARE CONFIGURATION
@@ -24,28 +22,34 @@ extern "C" {
 //
 
 
-#define CONTROL_READER_ACTIVE_PIN_POSITION          (0)
-#define CONTROL_DIGIT_REQUEST_VALID_PIN_POSITION    (1)
-#define CONTROL_DIGIT_REQUEST_PIN_POSITION_LOW      (2)
-#define CONTROL_DIGIT_REQUEST_PIN_POSITION_HIGH     (3)
-#define INVALID_PIN_DIGIT_POSITION                  (0xFF)
+class PortfolioParallelPort {
+    public:
+        PortfolioParallelPort(
+            Array<char, 3> statusPins,
+            Array<char, 4> pinValuePins,
+            char pinValueOutputValidPin,
+            Array<char, 4> controlPins
+        );
+    
+        void init();
+        int isHardwareInactive();
+        int pinDigitRequested();
+        void outputPINDigit(char value);
+        void outputReaderStatus(int statusValue);
+    
+        static const int INVALID_PIN_DIGIT_POSITION                  = 0xFF;
 
+    private:
+        static const int CONTROL_READER_ACTIVE_PIN_POSITION          = 0;
+        static const int CONTROL_DIGIT_REQUEST_VALID_PIN_POSITION    = 1;
+        static const int CONTROL_DIGIT_REQUEST_PIN_POSITION_LOW      = 2;
+        static const int CONTROL_DIGIT_REQUEST_PIN_POSITION_HIGH     = 3;
 
-typedef struct {
-    char m_statusPins[3];           // Pins for outputting PIN reader status
-    char m_pinValuePins[4];         // Pins for outputting PIN digit values
-    char m_pinValueOutputValidPin;  // Pin for indicating outputted PIN is valid
-    char m_controlPins[4];          // Pins for reading control values
-} PortfolioParallelPort;
+        Array<char, 3> m_statusPins;           // Pins for outputting PIN reader status
+        Array<char, 4> m_pinValuePins;      // Pins for outputting PIN digit values
+        char m_pinValueOutputValidPin;              // Pin for indicating outputted PIN is valid
+        Array<char, 4> m_controlPins;       // Pins for reading control values
+};
 
-void init_parallel_port(PortfolioParallelPort *port);
-int reader_deactivated(PortfolioParallelPort *port);
-int pin_digit_requested(PortfolioParallelPort *port);
-void output_pin_digit(PortfolioParallelPort *port, char value);
-void output_reader_status(PortfolioParallelPort *port, int statusValue);
-
-#ifdef __cplusplus
-} // extern "C"
-#endif
 
 #endif      // __PORTFOLIO_PARALLEL_PORT__H
