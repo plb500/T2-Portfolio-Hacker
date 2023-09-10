@@ -15,6 +15,7 @@
 - A case to put everything in (I milled mine out of MDF and aluminium sheet)
 
 ## Pi setup
+### Basic board/OS setup
 - Ensure everything is updated and upgraded post-install
   ```
   sudo apt update
@@ -43,6 +44,9 @@
   #dtoverlay=rpi-ft5406,touchscreen-swapped-x-y=1,touchscreen-inverted-y=1
   ```
   For the build, strictly speaking, only the 90 degree rotation is required, but I like having these here for reference
+  
+### Bluetooth setup (if using bluetooth -> Portfolio/HC-05 PIN transmission)
+(NB: This method works, but sucks and also feels like cheating. It seems to make the Pi really slow and unresponsive over Wifi. Much preferable to use the serial ine transmission method below)
 - Bluetooth pairing (if using the HC-05 interface Arduino project)
   - Install bluetooth pre-requisites on Pi:
     ```
@@ -109,4 +113,13 @@
     ```
   - To make the Bluetooth adapter automatically bound on boot, also add the above rfcomm bind command to the end of `/etc/rc.local`
   - Reboot Pi
-
+ 
+### Serial setup (if using GPIO serial -> Portfolio PIN transmission)
+- Run raspi-config
+  ```
+  sudo raspi-config
+  ```
+- Select `Interface Options` and then `Serial Port`
+- Pick "No" when asked if you want a login shell over the serial port
+- Pick "Yes" when asked if you want the serial interface enabled
+- Reboot Pi
