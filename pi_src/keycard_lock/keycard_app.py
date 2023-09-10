@@ -15,8 +15,8 @@ import sys
 def run_main():
     serial_port_baud = 9600
     lock_relay_pin = 23
-    green_led_pin = 4
-    red_led_pin = 18
+    green_led_pin = 18
+    red_led_pin = 4
     lcd_i2c_address = 0x27
 
     # Handle command-line arguments

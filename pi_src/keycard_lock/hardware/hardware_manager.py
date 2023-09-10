@@ -41,8 +41,7 @@ class HardwareManager(object):
             pin_factory=pin_factory
         )
 
-        self._char_lcd_controller.put_string(HardwareManager.LCD_GREETING_MESSAGE)
-        self._last_unlock_time = 0
+        self._do_lock()
 
     def initialize_hardware(self, current_pin):
         self._pin_serial_interface.cache_pin(current_pin)
@@ -56,6 +55,16 @@ class HardwareManager(object):
 
     def on_unlock(self):
         self._do_unlock()
+
+    def show_pin(self, pin=None):
+        if pin is None:
+            self._char_lcd_controller.put_string(HardwareManager.LCD_GREETING_MESSAGE)
+        else:
+            pin_string = "PIN: {}".format(str(pin).zfill(4))
+            self._char_lcd_controller.put_string(pin_string)
+
+    def show_lcd_string(self, display_string):
+        self._char_lcd_controller.put_string(display_string)
 
     def on_update(self):
         current_time_ms = HardwareManager._get_current_time_ms()
@@ -75,6 +84,7 @@ class HardwareManager(object):
         self._green_led.off()
         self._lock_relay.lock()
         self._char_lcd_controller.put_string(HardwareManager.LCD_GREETING_MESSAGE)
+        self._last_unlock_time = 0
 
     def _do_unlock(self):
         self._last_unlock_time = HardwareManager._get_current_time_ms()
