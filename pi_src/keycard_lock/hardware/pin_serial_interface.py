@@ -6,6 +6,7 @@ class PINSerialInterface(QObject):
     PIN_SEQUENCE_START = 0x80
     PIN_SEQUENCE_END = 0x81
     RECONNECT_TIME_MS = 500
+    TRANSMIT_TIME_MS = 500
 
     def __init__(self, parent, port_name, baudrate):
         super().__init__(parent=parent)
@@ -18,15 +19,19 @@ class PINSerialInterface(QObject):
         self._current_pin = None
         self._current_pin_lock = QMutex()
 
+        self._transmit_timer = None
+
     def open_port(self):
         self._serial_port = QSerialPort()
         self._serial_port.setPortName(self._port_name)
         self._serial_port.setBaudRate(self._baudrate)
         self._serial_port_active = self._serial_port.open(QIODevice.OpenModeFlag.ReadWrite)
         if self._serial_port_active:
-            self._serial_port.readyRead.connect(self.on_ready_read)
             self._serial_port.errorOccurred.connect(self._on_serial_port_error)
-            self._transmit_current_pin()
+
+            self._transmit_timer = QTimer(parent=self)
+            self._transmit_timer.timeout.connect(self._transmit_current_pin)
+            self._transmit_timer.start(PINSerialInterface.TRANSMIT_TIME_MS)
         else:
             # print("Connecting to serial port: {} FAILED".format(self._port_name))
             reconnect_timer = QTimer(parent=self)
@@ -35,6 +40,9 @@ class PINSerialInterface(QObject):
             reconnect_timer.start(PINSerialInterface.RECONNECT_TIME_MS)
 
     def shutdown(self):
+        if self._transmit_timer is not None:
+            self._transmit_timer.stop()
+
         if self._serial_port_active:
             self._serial_port.close()
 
@@ -61,17 +69,6 @@ class PINSerialInterface(QObject):
             print("Transmitting output bytes: {}".format(output_bytes.hex()))
             self._serial_port.write(output_bytes)
 
-    @pyqtSlot()
-    def on_ready_read(self):
-        # Check status of serial port
-        if not self._serial_port_active:
-            self.open_port()
-            return
-
-        data = self._serial_port.read(self._serial_port.bytesAvailable())
-        if b'\x81' in data:
-            self._transmit_current_pin()
-
     @staticmethod
     def _get_pin_bytes(pin):
         output_bytes = bytearray(PINSerialInterface.PIN_SEQUENCE_START.to_bytes(1, "big"))
@@ -89,10 +86,13 @@ class PINSerialInterface(QObject):
         return output_bytes
 
     def _on_reconnect_timeout(self):
-        # print("Reconnecting to serial port")
         self.open_port()
 
     def _on_serial_port_error(self, _):
+        if self._transmit_timer is not None:
+            self._transmit_timer.stop()
+            self._transmit_timer = None
+
         if self._serial_port is not None:
             self._serial_port.close()
             self._serial_port = None

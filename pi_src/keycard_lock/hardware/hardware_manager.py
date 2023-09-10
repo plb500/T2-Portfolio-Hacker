@@ -44,8 +44,8 @@ class HardwareManager(object):
         self._do_lock()
 
     def initialize_hardware(self, current_pin):
-        self._pin_serial_interface.cache_pin(current_pin)
         self._pin_serial_interface.open_port()
+        self._pin_serial_interface.cache_pin(current_pin)
 
     def on_new_pin(self, new_pin):
         self._pin_serial_interface.cache_pin(pin=new_pin)
