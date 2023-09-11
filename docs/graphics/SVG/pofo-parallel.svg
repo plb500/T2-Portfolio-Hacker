@@ -1,0 +1,1241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="260.44208mm"
+   height="141.49248mm"
+   viewBox="0 0 260.44208 141.49248"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (c3084ef, 2021-09-22)"
+   sodipodi:docname="pofo-parallel.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.0494256"
+     inkscape:cx="492.174"
+     inkscape:cy="267.76553"
+     inkscape:window-width="1800"
+     inkscape:window-height="1046"
+     inkscape:window-x="0"
+     inkscape:window-y="44"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-nodes="true"
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-midpoints="true"
+     fit-margin-top="10"
+     fit-margin-left="10"
+     fit-margin-right="10"
+     fit-margin-bottom="10"
+     showborder="true">
+    <sodipodi:guide
+       position="197.44847,48.782015"
+       orientation="0,-1"
+       id="guide37680" />
+    <sodipodi:guide
+       position="171.54198,32.238965"
+       orientation="0,-1"
+       id="guide38079" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="marker38869"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DotM"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.4,0,0,0.4,2.96,0.4)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path38867" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DotM"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DotM"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.4,0,0,0.4,2.96,0.4)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path38655" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DotS"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DotS"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.2,0,0,0.2,1.48,0.2)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path38658" />
+    </marker>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect23796"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect23792"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect23772"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect23768"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect23748"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect23744"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect23724"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect23720"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect23700"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect23696"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect23676"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect23672"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect23478"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect23474"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect23296"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect23056"
+       is_visible="true"
+       lpeversion="1" />
+    <rect
+       x="-455.22284"
+       y="247.93982"
+       width="145.29807"
+       height="287.93011"
+       id="rect1922" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(281.0241,-18.601849)">
+    <path
+       id="rect17506"
+       style="fill:#e2e2e2;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025"
+       d="m -265.59088,91.19352 h 169.999999 c 2.77,0 5.885187,2.375244 5,5 l -10.117359,30 c -0.88519,2.62476 -2.23,5 -5,5 h -148.96352 c -2.77,0 -4.0526,-2.39705 -5,-5 l -10.91912,-30 c -0.9474,-2.602948 2.23,-5 5,-5 z"
+       sodipodi:nodetypes="sssssssss" />
+    <g
+       id="g18286">
+      <g
+         id="g18182">
+        <g
+           id="g18023">
+          <circle
+             style="fill:#449bd8;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+             id="path846-34"
+             cx="-111.41592"
+             cy="119.73822"
+             r="5.2916665" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+             x="-111.41688"
+             y="121.46684"
+             id="text1192-861"><tspan
+               sodipodi:role="line"
+               id="tspan1190-15"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';stroke-width:0.264583"
+               x="-111.41688"
+               y="121.46684">14</tspan></text>
+        </g>
+        <g
+           id="g18028">
+          <circle
+             style="fill:#eaeb77;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+             id="path846-1-9"
+             cx="-123.99319"
+             cy="119.73822"
+             r="5.2916665" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+             x="-123.99415"
+             y="121.5014"
+             id="text1192-4-8"><tspan
+               sodipodi:role="line"
+               id="tspan1190-8-0"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';stroke-width:0.264583"
+               x="-123.99415"
+               y="121.5014">15</tspan></text>
+        </g>
+        <g
+           id="g18033">
+          <circle
+             style="fill:#449bd8;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+             id="path846-8-2"
+             cx="-136.57047"
+             cy="119.73822"
+             r="5.2916665" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+             x="-136.57143"
+             y="121.43226"
+             id="text1192-45-6"><tspan
+               sodipodi:role="line"
+               id="tspan1190-88-7"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';stroke-width:0.264583"
+               x="-136.57143"
+               y="121.43226">16</tspan></text>
+        </g>
+        <g
+           id="g18038">
+          <circle
+             style="fill:#449bd8;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+             id="path846-4-1"
+             cx="-149.14774"
+             cy="119.73822"
+             r="5.2916665" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+             x="-149.1734"
+             y="121.47918"
+             id="text1192-0-2"><tspan
+               sodipodi:role="line"
+               id="tspan1190-6-1"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';stroke-width:0.264583"
+               x="-149.1734"
+               y="121.47918">17</tspan></text>
+        </g>
+        <g
+           id="g18043">
+          <circle
+             style="fill:#449bd8;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+             id="path846-3-6"
+             cx="-161.72499"
+             cy="119.73822"
+             r="5.2916665" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+             x="-161.69632"
+             y="121.43226"
+             id="text1192-8-5"><tspan
+               sodipodi:role="line"
+               id="tspan1190-5-7"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';stroke-width:0.264583"
+               x="-161.69632"
+               y="121.43226">18</tspan></text>
+        </g>
+        <g
+           id="g18048">
+          <circle
+             style="fill:#449bd8;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+             id="path846-5-6"
+             cx="-174.30226"
+             cy="119.73822"
+             r="5.2916665" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+             x="-174.30322"
+             y="121.46684"
+             id="text1192-5-3"><tspan
+               sodipodi:role="line"
+               id="tspan1190-0-2"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';stroke-width:0.264583"
+               x="-174.30322"
+               y="121.46684">19</tspan></text>
+        </g>
+        <g
+           id="g18053">
+          <circle
+             style="fill:#449bd8;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+             id="path846-53-0"
+             cx="-186.87953"
+             cy="119.73822"
+             r="5.2916665" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+             x="-186.84099"
+             y="121.46684"
+             id="text1192-9-3"><tspan
+               sodipodi:role="line"
+               id="tspan1190-9-7"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';stroke-width:0.264583"
+               x="-186.84099"
+               y="121.46684">20</tspan></text>
+        </g>
+        <g
+           id="g18058">
+          <circle
+             style="fill:#449bd8;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+             id="path846-0-5"
+             cx="-199.4568"
+             cy="119.73822"
+             r="5.2916665" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+             x="-199.45776"
+             y="121.46684"
+             id="text1192-90-9"><tspan
+               sodipodi:role="line"
+               id="tspan1190-7-1"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';stroke-width:0.264583"
+               x="-199.45776"
+               y="121.46684">21</tspan></text>
+        </g>
+        <g
+           id="g18063">
+          <circle
+             style="fill:#eaeb77;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+             id="path846-83-4"
+             cx="-212.03407"
+             cy="119.73822"
+             r="5.2916665" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+             x="-212.03503"
+             y="121.46684"
+             id="text1192-86-0"><tspan
+               sodipodi:role="line"
+               id="tspan1190-1-8"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';stroke-width:0.264583"
+               x="-212.03503"
+               y="121.46684">22</tspan></text>
+        </g>
+        <g
+           id="g18068">
+          <circle
+             style="fill:#eaeb77;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+             id="path846-9-5"
+             cx="-224.61134"
+             cy="119.73822"
+             r="5.2916665" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+             x="-224.68393"
+             y="121.46684"
+             id="text1192-7-8"><tspan
+               sodipodi:role="line"
+               id="tspan1190-55-2"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';stroke-width:0.264583"
+               x="-224.68393"
+               y="121.46684">23</tspan></text>
+        </g>
+        <g
+           id="g18073">
+          <circle
+             style="fill:#eaeb77;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+             id="path846-7-2"
+             cx="-237.18861"
+             cy="119.73822"
+             r="5.2916665" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+             x="-237.18958"
+             y="121.46684"
+             id="text1192-95-6"><tspan
+               sodipodi:role="line"
+               id="tspan1190-56-6"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';stroke-width:0.264583"
+               x="-237.18958"
+               y="121.46684">24</tspan></text>
+        </g>
+        <g
+           id="g18078">
+          <circle
+             style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+             id="path846-38-3"
+             cx="-249.76588"
+             cy="119.73822"
+             r="5.2916665" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+             x="-249.74216"
+             y="121.5014"
+             id="text1192-89-4"><tspan
+               sodipodi:role="line"
+               id="tspan1190-4-4"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+               x="-249.74216"
+               y="121.5014">25</tspan></text>
+        </g>
+      </g>
+      <g
+         id="g18132">
+        <g
+           id="g17855">
+          <circle
+             style="fill:#449bd8;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+             id="path846"
+             cx="-105.12729"
+             cy="102.64882"
+             r="5.2916665" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+             x="-105.12825"
+             y="104.37743"
+             id="text1192"><tspan
+               sodipodi:role="line"
+               id="tspan1190"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';stroke-width:0.264583"
+               x="-105.12825"
+               y="104.37743">1</tspan></text>
+        </g>
+        <g
+           id="g17860">
+          <circle
+             style="fill:#50e79b;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+             id="path846-1"
+             cx="-117.70456"
+             cy="102.64882"
+             r="5.2916665" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+             x="-117.70552"
+             y="104.412"
+             id="text1192-4"><tspan
+               sodipodi:role="line"
+               id="tspan1190-8"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';stroke-width:0.264583"
+               x="-117.70552"
+               y="104.412">2</tspan></text>
+        </g>
+        <g
+           id="g17865">
+          <circle
+             style="fill:#50e79b;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+             id="path846-8"
+             cx="-130.28183"
+             cy="102.64882"
+             r="5.2916665" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+             x="-130.28279"
+             y="104.34286"
+             id="text1192-45"><tspan
+               sodipodi:role="line"
+               id="tspan1190-88"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';stroke-width:0.264583"
+               x="-130.28279"
+               y="104.34286">3</tspan></text>
+        </g>
+        <g
+           id="g17870">
+          <circle
+             style="fill:#50e79b;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+             id="path846-4"
+             cx="-142.8591"
+             cy="102.64882"
+             r="5.2916665" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+             x="-142.88477"
+             y="104.38978"
+             id="text1192-0"><tspan
+               sodipodi:role="line"
+               id="tspan1190-6"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';stroke-width:0.264583"
+               x="-142.88477"
+               y="104.38978">4</tspan></text>
+        </g>
+        <g
+           id="g17978">
+          <circle
+             style="fill:#50e79b;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+             id="path846-3"
+             cx="-155.43636"
+             cy="102.64882"
+             r="5.2916665" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+             x="-155.40768"
+             y="104.34286"
+             id="text1192-8"><tspan
+               sodipodi:role="line"
+               id="tspan1190-5"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';stroke-width:0.264583"
+               x="-155.40768"
+               y="104.34286">5</tspan></text>
+        </g>
+        <g
+           id="g17983">
+          <circle
+             style="fill:#50e79b;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+             id="path846-5"
+             cx="-168.01363"
+             cy="102.64882"
+             r="5.2916665" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+             x="-168.01459"
+             y="104.37743"
+             id="text1192-5"><tspan
+               sodipodi:role="line"
+               id="tspan1190-0"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';stroke-width:0.264583"
+               x="-168.01459"
+               y="104.37743">6</tspan></text>
+        </g>
+        <g
+           id="g17988">
+          <circle
+             style="fill:#50e79b;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+             id="path846-53"
+             cx="-180.5909"
+             cy="102.64882"
+             r="5.2916665" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+             x="-180.55235"
+             y="104.37743"
+             id="text1192-9"><tspan
+               sodipodi:role="line"
+               id="tspan1190-9"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';stroke-width:0.264583"
+               x="-180.55235"
+               y="104.37743">7</tspan></text>
+        </g>
+        <g
+           id="g17993">
+          <circle
+             style="fill:#50e79b;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+             id="path846-0"
+             cx="-193.16817"
+             cy="102.64882"
+             r="5.2916665" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+             x="-193.16913"
+             y="104.37743"
+             id="text1192-90"><tspan
+               sodipodi:role="line"
+               id="tspan1190-7"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';stroke-width:0.264583"
+               x="-193.16913"
+               y="104.37743">8</tspan></text>
+        </g>
+        <g
+           id="g17998">
+          <circle
+             style="fill:#50e79b;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+             id="path846-83"
+             cx="-205.74544"
+             cy="102.64882"
+             r="5.2916665" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+             x="-205.7464"
+             y="104.37743"
+             id="text1192-86"><tspan
+               sodipodi:role="line"
+               id="tspan1190-1"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';stroke-width:0.264583"
+               x="-205.7464"
+               y="104.37743">9</tspan></text>
+        </g>
+        <g
+           id="g18003">
+          <circle
+             style="fill:#eaeb77;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+             id="path846-9"
+             cx="-218.32271"
+             cy="102.64882"
+             r="5.2916665" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+             x="-218.39529"
+             y="104.37743"
+             id="text1192-7"><tspan
+               sodipodi:role="line"
+               id="tspan1190-55"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';stroke-width:0.264583"
+               x="-218.39529"
+               y="104.37743">10</tspan></text>
+        </g>
+        <g
+           id="g18008">
+          <circle
+             style="fill:#eaeb77;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+             id="path846-7"
+             cx="-230.89998"
+             cy="102.64882"
+             r="5.2916665" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+             x="-230.90094"
+             y="104.37743"
+             id="text1192-95"><tspan
+               sodipodi:role="line"
+               id="tspan1190-56"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';stroke-width:0.264583"
+               x="-230.90094"
+               y="104.37743">11</tspan></text>
+        </g>
+        <g
+           id="g18013">
+          <circle
+             style="fill:#eaeb77;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+             id="path846-38"
+             cx="-243.47725"
+             cy="102.64882"
+             r="5.2916665" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+             x="-243.45352"
+             y="104.412"
+             id="text1192-89"><tspan
+               sodipodi:role="line"
+               id="tspan1190-4"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';stroke-width:0.264583"
+               x="-243.45352"
+               y="104.412">12</tspan></text>
+        </g>
+        <g
+           id="g18018">
+          <circle
+             style="fill:#eaeb77;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+             id="path846-17"
+             cx="-256.0545"
+             cy="102.64882"
+             r="5.2916665" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+             x="-256.04065"
+             y="104.34286"
+             id="text1192-451"><tspan
+               sodipodi:role="line"
+               id="tspan1190-46"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';stroke-width:0.264583"
+               x="-256.04065"
+               y="104.34286">13</tspan></text>
+        </g>
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text1920"
+       style="font-weight:bold;font-size:192px;line-height:1.25;font-family:'Arial Black';-inkscape-font-specification:'Arial Black,  Bold';text-align:center;white-space:pre;shape-inside:url(#rect1922)" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:50.8px;line-height:1.25;font-family:'Arial Black';-inkscape-font-specification:'Arial Black,  Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="-227.59358"
+       y="19.958206"
+       id="text19309"><tspan
+         sodipodi:role="line"
+         id="tspan19307"
+         style="stroke-width:0.264583"
+         x="-227.59358"
+         y="19.958206" /></text>
+    <g
+       id="g35529">
+      <rect
+         style="fill:#50e79b;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+         id="rect18514"
+         width="10"
+         height="10"
+         x="-261.62396"
+         y="28.866432"
+         rx="2"
+         ry="2" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="-246.24619"
+         y="35.595043"
+         id="text1192-86-9"><tspan
+           sodipodi:role="line"
+           id="tspan1190-1-2"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:start;text-anchor:start;stroke-width:0.264583"
+           x="-246.24619"
+           y="35.595043">PORT A - ADDRESS $8078 (NORMALLY CONFIGURED FOR OUTPUT)</tspan></text>
+    </g>
+    <g
+       id="g35539">
+      <rect
+         style="fill:#eaeb77;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+         id="rect18514-3"
+         width="10"
+         height="10"
+         x="-261.62396"
+         y="53.542446"
+         rx="2"
+         ry="2" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="-246.37953"
+         y="60.271057"
+         id="text1192-86-9-8"><tspan
+           sodipodi:role="line"
+           id="tspan1190-1-2-4"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:start;text-anchor:start;stroke-width:0.264583"
+           x="-246.37953"
+           y="60.271057">PORT C - ADDRESS $807A (NORMALLY CONFIGURED FOR INPUT)</tspan></text>
+    </g>
+    <g
+       id="g35544">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+         id="rect18514-3-6"
+         width="10"
+         height="10"
+         x="-261.62396"
+         y="65.880447"
+         rx="2"
+         ry="2" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="-246.21901"
+         y="72.609062"
+         id="text1192-86-9-8-5"><tspan
+           sodipodi:role="line"
+           id="tspan1190-1-2-4-6"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:start;text-anchor:start;stroke-width:0.264583"
+           x="-246.21901"
+           y="72.609062">GND</tspan></text>
+    </g>
+    <g
+       id="g35534">
+      <rect
+         style="fill:#449bd8;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0.400025;stroke-opacity:1"
+         id="rect18514-6"
+         width="10"
+         height="10"
+         x="-261.62396"
+         y="41.204437"
+         rx="2"
+         ry="2" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="-246.261"
+         y="47.933048"
+         id="text1192-86-9-1"><tspan
+           sodipodi:role="line"
+           id="tspan1190-1-2-2"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:start;text-anchor:start;stroke-width:0.264583"
+           x="-246.261"
+           y="47.933048">PORT B - ADDRESS $8079 (NORMALLY CONFIGURED FOR OUTPUT)</tspan></text>
+    </g>
+    <g
+       id="g23301-8"
+       transform="translate(-13.657866,75.75139)"
+       style="opacity:0.5">
+      <path
+         style="fill:none;stroke:#ff0007;stroke-width:2.11667;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -152.92537,39.128583 9.71649,9.716495"
+         id="path23054-65"
+         inkscape:path-effect="#path-effect23474"
+         inkscape:original-d="m -152.92537,39.128583 c 3.23909,3.239098 6.47792,6.477929 9.71649,9.716495" />
+      <path
+         style="fill:none;stroke:#ff0007;stroke-width:2.11667;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -143.20888,39.128583 -9.71649,9.716495"
+         id="path23054-6-7"
+         inkscape:path-effect="#path-effect23478"
+         inkscape:original-d="m -143.20888,39.128583 c -3.23909,3.239098 -6.47792,6.477929 -9.71649,9.716495" />
+    </g>
+    <g
+       id="g23301-8-3"
+       transform="translate(-26.235136,75.75139)"
+       style="opacity:0.5">
+      <path
+         style="fill:none;stroke:#ff0007;stroke-width:2.11667;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -152.92537,39.128583 9.71649,9.716495"
+         id="path23054-65-6"
+         inkscape:path-effect="#path-effect23672"
+         inkscape:original-d="m -152.92537,39.128583 c 3.23909,3.239098 6.47792,6.477929 9.71649,9.716495" />
+      <path
+         style="fill:none;stroke:#ff0007;stroke-width:2.11667;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -143.20888,39.128583 -9.71649,9.716495"
+         id="path23054-6-7-8"
+         inkscape:path-effect="#path-effect23676"
+         inkscape:original-d="m -143.20888,39.128583 c -3.23909,3.239098 -6.47792,6.477929 -9.71649,9.716495" />
+    </g>
+    <g
+       id="g23301-8-6"
+       transform="translate(-38.812407,75.75139)"
+       style="opacity:0.5">
+      <path
+         style="fill:none;stroke:#ff0007;stroke-width:2.11667;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -152.92537,39.128583 9.71649,9.716495"
+         id="path23054-65-0"
+         inkscape:path-effect="#path-effect23696"
+         inkscape:original-d="m -152.92537,39.128583 c 3.23909,3.239098 6.47792,6.477929 9.71649,9.716495" />
+      <path
+         style="fill:none;stroke:#ff0007;stroke-width:2.11667;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -143.20888,39.128583 -9.71649,9.716495"
+         id="path23054-6-7-2"
+         inkscape:path-effect="#path-effect23700"
+         inkscape:original-d="m -143.20888,39.128583 c -3.23909,3.239098 -6.47792,6.477929 -9.71649,9.716495" />
+    </g>
+    <g
+       id="g23301-8-7"
+       transform="translate(-51.389677,75.75139)"
+       style="opacity:0.5">
+      <path
+         style="fill:none;stroke:#ff0007;stroke-width:2.11667;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -152.92537,39.128583 9.71649,9.716495"
+         id="path23054-65-9"
+         inkscape:path-effect="#path-effect23720"
+         inkscape:original-d="m -152.92537,39.128583 c 3.23909,3.239098 6.47792,6.477929 9.71649,9.716495" />
+      <path
+         style="fill:none;stroke:#ff0007;stroke-width:2.11667;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -143.20888,39.128583 -9.71649,9.716495"
+         id="path23054-6-7-1"
+         inkscape:path-effect="#path-effect23724"
+         inkscape:original-d="m -143.20888,39.128583 c -3.23909,3.239098 -6.47792,6.477929 -9.71649,9.716495" />
+    </g>
+    <g
+       id="g23301-8-71"
+       transform="translate(-63.966948,75.75139)"
+       style="opacity:0.5">
+      <path
+         style="fill:none;stroke:#ff0007;stroke-width:2.11667;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -152.92537,39.128583 9.71649,9.716495"
+         id="path23054-65-8"
+         inkscape:path-effect="#path-effect23744"
+         inkscape:original-d="m -152.92537,39.128583 c 3.23909,3.239098 6.47792,6.477929 9.71649,9.716495" />
+      <path
+         style="fill:none;stroke:#ff0007;stroke-width:2.11667;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -143.20888,39.128583 -9.71649,9.716495"
+         id="path23054-6-7-5"
+         inkscape:path-effect="#path-effect23748"
+         inkscape:original-d="m -143.20888,39.128583 c -3.23909,3.239098 -6.47792,6.477929 -9.71649,9.716495" />
+    </g>
+    <g
+       id="g23301-8-1"
+       transform="translate(-76.544218,75.75139)"
+       style="opacity:0.5">
+      <path
+         style="fill:none;stroke:#ff0007;stroke-width:2.11667;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -152.92537,39.128583 9.71649,9.716495"
+         id="path23054-65-3"
+         inkscape:path-effect="#path-effect23768"
+         inkscape:original-d="m -152.92537,39.128583 c 3.23909,3.239098 6.47792,6.477929 9.71649,9.716495" />
+      <path
+         style="fill:none;stroke:#ff0007;stroke-width:2.11667;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -143.20888,39.128583 -9.71649,9.716495"
+         id="path23054-6-7-7"
+         inkscape:path-effect="#path-effect23772"
+         inkscape:original-d="m -143.20888,39.128583 c -3.23909,3.239098 -6.47792,6.477929 -9.71649,9.716495" />
+    </g>
+    <g
+       id="g23301-8-2"
+       transform="translate(-89.121489,75.75139)"
+       style="opacity:0.5">
+      <path
+         style="fill:none;stroke:#ff0007;stroke-width:2.11667;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -152.92537,39.128583 9.71649,9.716495"
+         id="path23054-65-32"
+         inkscape:path-effect="#path-effect23792"
+         inkscape:original-d="m -152.92537,39.128583 c 3.23909,3.239098 6.47792,6.477929 9.71649,9.716495" />
+      <path
+         style="fill:none;stroke:#ff0007;stroke-width:2.11667;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -143.20888,39.128583 -9.71649,9.716495"
+         id="path23054-6-7-9"
+         inkscape:path-effect="#path-effect23796"
+         inkscape:original-d="m -143.20888,39.128583 c -3.23909,3.239098 -6.47792,6.477929 -9.71649,9.716495" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;fill:#024300;fill-opacity:1;stroke-width:0.264583"
+       x="-118.0885"
+       y="96.250931"
+       id="text1192-2"><tspan
+         sodipodi:role="line"
+         id="tspan1190-2"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';fill:#024300;fill-opacity:1;stroke-width:0.264583"
+         x="-118.0885"
+         y="96.250931">:0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;fill:#024300;fill-opacity:1;stroke-width:0.264583"
+       x="-130.60439"
+       y="96.227646"
+       id="text1192-2-5"><tspan
+         sodipodi:role="line"
+         id="tspan1190-2-5"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';fill:#024300;fill-opacity:1;stroke-width:0.264583"
+         x="-130.60439"
+         y="96.227646">:1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;fill:#024300;fill-opacity:1;stroke-width:0.264583"
+       x="-143.16049"
+       y="96.257278"
+       id="text1192-2-8"><tspan
+         sodipodi:role="line"
+         id="tspan1190-2-3"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';fill:#024300;fill-opacity:1;stroke-width:0.264583"
+         x="-143.16049"
+         y="96.257278">:2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;fill:#024300;fill-opacity:1;stroke-width:0.264583"
+       x="-155.74622"
+       y="96.221298"
+       id="text1192-2-4"><tspan
+         sodipodi:role="line"
+         id="tspan1190-2-6"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';fill:#024300;fill-opacity:1;stroke-width:0.264583"
+         x="-155.74622"
+         y="96.221298">:3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;fill:#024300;fill-opacity:1;stroke-width:0.264583"
+       x="-168.42932"
+       y="96.238228"
+       id="text1192-2-57"><tspan
+         sodipodi:role="line"
+         id="tspan1190-2-32"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';fill:#024300;fill-opacity:1;stroke-width:0.264583"
+         x="-168.42932"
+         y="96.238228">:4</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;fill:#024300;fill-opacity:1;stroke-width:0.264583"
+       x="-180.88594"
+       y="96.221298"
+       id="text1192-2-6"><tspan
+         sodipodi:role="line"
+         id="tspan1190-2-7"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';fill:#024300;fill-opacity:1;stroke-width:0.264583"
+         x="-180.88594"
+         y="96.221298">:5</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;fill:#024300;fill-opacity:1;stroke-width:0.264583"
+       x="-193.51825"
+       y="96.250931"
+       id="text1192-2-0"><tspan
+         sodipodi:role="line"
+         id="tspan1190-2-30"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';fill:#024300;fill-opacity:1;stroke-width:0.264583"
+         x="-193.51825"
+         y="96.250931">:6</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;fill:#024300;fill-opacity:1;stroke-width:0.264583"
+       x="-206.04048"
+       y="96.227646"
+       id="text1192-2-2"><tspan
+         sodipodi:role="line"
+         id="tspan1190-2-0"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';fill:#024300;fill-opacity:1;stroke-width:0.264583"
+         x="-206.04048"
+         y="96.227646">:7</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;fill:#0d1f56;fill-opacity:1;stroke-width:0.264583"
+       x="-105.51123"
+       y="96.250931"
+       id="text1192-2-00"><tspan
+         sodipodi:role="line"
+         id="tspan1190-2-37"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';fill:#0d1f56;fill-opacity:1;stroke-width:0.264583"
+         x="-105.51123"
+         y="96.250931">:0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;fill:#0d1f56;fill-opacity:1;stroke-width:0.264583"
+       x="-111.73848"
+       y="129.31375"
+       id="text1192-2-5-9"><tspan
+         sodipodi:role="line"
+         id="tspan1190-2-5-7"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';fill:#0d1f56;fill-opacity:1;stroke-width:0.264583"
+         x="-111.73848"
+         y="129.31375">:1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;fill:#0d1f56;fill-opacity:1;stroke-width:0.264583"
+       x="-136.87186"
+       y="129.34338"
+       id="text1192-2-8-3"><tspan
+         sodipodi:role="line"
+         id="tspan1190-2-3-9"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';fill:#0d1f56;fill-opacity:1;stroke-width:0.264583"
+         x="-136.87186"
+         y="129.34338">:2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;fill:#0d1f56;fill-opacity:1;stroke-width:0.264583"
+       x="-149.4576"
+       y="129.3074"
+       id="text1192-2-4-4"><tspan
+         sodipodi:role="line"
+         id="tspan1190-2-6-3"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';fill:#0d1f56;fill-opacity:1;stroke-width:0.264583"
+         x="-149.4576"
+         y="129.3074">:3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;fill:#0d1f56;fill-opacity:1;stroke-width:0.264583"
+       x="-162.14069"
+       y="129.32434"
+       id="text1192-2-57-6"><tspan
+         sodipodi:role="line"
+         id="tspan1190-2-32-9"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';fill:#0d1f56;fill-opacity:1;stroke-width:0.264583"
+         x="-162.14069"
+         y="129.32434">:4</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;fill:#0d1f56;fill-opacity:1;stroke-width:0.264583"
+       x="-174.59731"
+       y="129.3074"
+       id="text1192-2-6-1"><tspan
+         sodipodi:role="line"
+         id="tspan1190-2-7-1"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';fill:#0d1f56;fill-opacity:1;stroke-width:0.264583"
+         x="-174.59731"
+         y="129.3074">:5</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;fill:#0d1f56;fill-opacity:1;stroke-width:0.264583"
+       x="-187.22961"
+       y="129.33704"
+       id="text1192-2-0-5"><tspan
+         sodipodi:role="line"
+         id="tspan1190-2-30-6"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';fill:#0d1f56;fill-opacity:1;stroke-width:0.264583"
+         x="-187.22961"
+         y="129.33704">:6</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;fill:#0d1f56;fill-opacity:1;stroke-width:0.264583"
+       x="-199.75185"
+       y="129.31375"
+       id="text1192-2-2-9"><tspan
+         sodipodi:role="line"
+         id="tspan1190-2-0-6"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';fill:#0d1f56;fill-opacity:1;stroke-width:0.264583"
+         x="-199.75185"
+         y="129.31375">:7</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;fill:#373611;fill-opacity:1;stroke-width:0.264583"
+       x="-243.86119"
+       y="96.250931"
+       id="text1192-2-86"><tspan
+         sodipodi:role="line"
+         id="tspan1190-2-1"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';fill:#373611;fill-opacity:1;stroke-width:0.264583"
+         x="-243.86119"
+         y="96.250931">:0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;fill:#373611;fill-opacity:1;stroke-width:0.264583"
+       x="-256.37708"
+       y="96.227646"
+       id="text1192-2-5-6"><tspan
+         sodipodi:role="line"
+         id="tspan1190-2-5-8"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';fill:#373611;fill-opacity:1;stroke-width:0.264583"
+         x="-256.37708"
+         y="96.227646">:1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;fill:#373611;fill-opacity:1;stroke-width:0.264583"
+       x="-212.33546"
+       y="129.34338"
+       id="text1192-2-8-9"><tspan
+         sodipodi:role="line"
+         id="tspan1190-2-3-4"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';fill:#373611;fill-opacity:1;stroke-width:0.264583"
+         x="-212.33546"
+         y="129.34338">:2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;fill:#373611;fill-opacity:1;stroke-width:0.264583"
+       x="-124.30305"
+       y="129.3074"
+       id="text1192-2-4-7"><tspan
+         sodipodi:role="line"
+         id="tspan1190-2-6-6"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';fill:#373611;fill-opacity:1;stroke-width:0.264583"
+         x="-124.30305"
+         y="129.3074">:3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;fill:#373611;fill-opacity:1;stroke-width:0.264583"
+       x="-231.31567"
+       y="96.238228"
+       id="text1192-2-57-69"><tspan
+         sodipodi:role="line"
+         id="tspan1190-2-32-90"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';fill:#373611;fill-opacity:1;stroke-width:0.264583"
+         x="-231.31567"
+         y="96.238228">:4</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;fill:#373611;fill-opacity:1;stroke-width:0.264583"
+       x="-218.61775"
+       y="96.221298"
+       id="text1192-2-6-4"><tspan
+         sodipodi:role="line"
+         id="tspan1190-2-7-4"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';fill:#373611;fill-opacity:1;stroke-width:0.264583"
+         x="-218.61775"
+         y="96.221298">:5</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;fill:#373611;fill-opacity:1;stroke-width:0.264583"
+       x="-224.96143"
+       y="129.33704"
+       id="text1192-2-0-8"><tspan
+         sodipodi:role="line"
+         id="tspan1190-2-30-64"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';fill:#373611;fill-opacity:1;stroke-width:0.264583"
+         x="-224.96143"
+         y="129.33704">:6</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:center;text-anchor:middle;fill:#373611;fill-opacity:1;stroke-width:0.264583"
+       x="-237.48366"
+       y="129.31375"
+       id="text1192-2-2-7"><tspan
+         sodipodi:role="line"
+         id="tspan1190-2-0-5"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';fill:#373611;fill-opacity:1;stroke-width:0.264583"
+         x="-237.48366"
+         y="129.31375">:7</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:start;text-anchor:start;stroke-width:0.264583"
+       x="-238.36903"
+       y="143.85156"
+       id="text1192-86-9-8-9"><tspan
+         sodipodi:role="line"
+         id="tspan1190-1-2-4-8"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="-238.36903"
+         y="143.85156">PINS MARKED WITH AN &quot;X&quot; ARE NOT EXPOSED </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="-238.36903"
+         y="150.02518"
+         id="tspan35841">VIA THE SMART PARALLEL INTERFACE</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#DotM);marker-end:url(#marker38869)"
+       d="m -101.30711,94.769264 17.598996,-5e-6 v 33.086101 h -23.949016"
+       id="path38349" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker38869)"
+       d="m -83.708112,111.31231 h 12.366278"
+       id="path38910" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:start;text-anchor:start;stroke-width:0.264583"
+       x="-68.810577"
+       y="109.95412"
+       id="text1192-86-9-5"><tspan
+         sodipodi:role="line"
+         id="tspan1190-1-2-3"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="-68.810577"
+         y="109.95412">PORT BYTE</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:'PT Mono';-inkscape-font-specification:'PT Mono Bold';text-align:start;text-anchor:start;stroke-width:0.264583"
+         x="-68.810577"
+         y="116.12773"
+         id="tspan39322">BIT POSITIONS</tspan></text>
+  </g>
+</svg>
