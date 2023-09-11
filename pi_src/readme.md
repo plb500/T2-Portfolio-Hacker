@@ -13,6 +13,7 @@
 - 2 x Spring loaded pin ([link](https://www.digikey.ca/en/products/detail/mill-max-manufacturing-corp/7949-0-15-20-09-14-11-0/13531603))
 - Wires, connectors etc
 - A case to put everything in (I milled mine out of MDF and aluminium sheet)
+  <img src="/docs/graphics/images/keypad-primed.jpeg" width="50%">
 
 ## Pi setup
 ### Basic board/OS setup
