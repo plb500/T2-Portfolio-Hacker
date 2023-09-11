@@ -27,31 +27,14 @@ void loop() {
         return;
     }
 
-    // Otherwise proceed and attempt to obtain pin, respond to requests etc
-    switch(btReader.getStatus()) {
-        case BT_MODULE_NO_PIN:
-            btReader.triggerPINRead();
-            break;
-            
-        case BT_MODULE_READING_PIN:
-            // No action required
-            break;
-            
-        case BT_MODULE_HAS_VALID_PIN:
-            // Maybe cache the PIN? Seems redundant since we'd have to reset this on error anyway
-            Serial.print("Box active. PIN obtained:");
-            Serial.print(btReader.getPINDigit(0), DEC);
-            Serial.print(btReader.getPINDigit(1), DEC);
-            Serial.print(btReader.getPINDigit(2), DEC);
-            Serial.println(btReader.getPINDigit(3), DEC);
-            break;
-            
-        case BT_MODULE_PIN_ERROR:
-            // Try re-triggering?
-            btReader.triggerPINRead();
-            break;
-    }
     btReader.update();
+    if(btReader.hasPIN()) {
+        Serial.print("Box active. PIN obtained:");
+        Serial.print(btReader.getPINDigit(0), DEC);
+        Serial.print(btReader.getPINDigit(1), DEC);
+        Serial.print(btReader.getPINDigit(2), DEC);
+        Serial.println(btReader.getPINDigit(3), DEC);
+    }
     
     // Output reader status
     parallelPort.outputReaderStatus(btReader.getStatus());
@@ -59,10 +42,7 @@ void loop() {
     // Check if a PIN digit has been requested
     int requestedDigit = parallelPort.pinDigitRequested();
     if(requestedDigit != PortfolioParallelPort::INVALID_PIN_DIGIT_POSITION) {
-        if(
-            (btReader.getStatus() == BT_MODULE_HAS_VALID_PIN) && 
-            (requestedDigit < BluetoothCardReader::MAX_PIN_LENGTH)
-        ) {
+        if(btReader.hasPIN() && (requestedDigit < BluetoothCardReader::MAX_PIN_LENGTH)) {
             Serial.print("Pin digit ");
             Serial.print(requestedDigit);
             Serial.println(" requested");

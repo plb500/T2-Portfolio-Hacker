@@ -17,9 +17,12 @@ void BluetoothCardReader::init() {
 }
 
 void BluetoothCardReader::reset() {
+    resetPINBuffer();
+    
     for(int i = 0; i < MAX_PIN_LENGTH; ++i) {
-        m_digitBuffer[i] = INVALID_PIN_VALUE;
+        m_latchedDigits[i] = INVALID_PIN_VALUE;
     }
+
     m_status = BT_MODULE_NO_PIN;
 }
 
@@ -27,9 +30,6 @@ void BluetoothCardReader::update() {
     while(m_serialPort.available()) {
         byte c = (byte) (m_serialPort.read());
 
-        Serial.print("Read incoming byte: 0x");
-        Serial.println(c, HEX);
-        
         if(c & 0x80) {
             // Control byte
             processControlByte(c);
@@ -44,6 +44,16 @@ BTModuleStatus BluetoothCardReader::getStatus() {
     return m_status;
 }
 
+bool BluetoothCardReader::hasPIN() {
+    for(int i = 0; i < MAX_PIN_LENGTH; ++i) {
+        if(m_latchedDigits[i] == INVALID_PIN_VALUE) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
 byte BluetoothCardReader::getPINDigit(int digitIndex) {
     if(digitIndex >= MAX_PIN_LENGTH) {
         return INVALID_PIN_VALUE;    
@@ -53,11 +63,13 @@ byte BluetoothCardReader::getPINDigit(int digitIndex) {
         return INVALID_PIN_VALUE;    
     }
 
-    return m_digitBuffer[digitIndex];
+    return m_latchedDigits[digitIndex];
 }
 
-void BluetoothCardReader::triggerPINRead() {
-    m_serialPort.write(TRIGGER_PIN_READ);   
+void BluetoothCardReader::resetPINBuffer() {
+    for(int i = 0; i < MAX_PIN_LENGTH; ++i) {
+        m_digitBuffer[i] = INVALID_PIN_VALUE;
+    }
 }
 
 void BluetoothCardReader::processControlByte(byte c) {
@@ -66,8 +78,7 @@ void BluetoothCardReader::processControlByte(byte c) {
     switch(status) {
         case CARD_READER_NEW_PIN_START:
             Serial.println("Starting new PIN");
-            reset();
-            m_status = BT_MODULE_READING_PIN;
+            resetPINBuffer();
             break;
             
         case CARD_READER_NEW_PIN_END: 
@@ -81,22 +92,12 @@ void BluetoothCardReader::processPINByte(byte c) {
     int digitPosition = ((c & 0x30) >> 4);
     byte digitValue = (c & 0x0F);
 
-    Serial.print("PIN digit ");
-    Serial.print(digitPosition);                
-    Serial.print(" is ");
-    Serial.println(digitValue, DEC);
-
     m_digitBuffer[digitPosition] = digitValue;
 }
 
 void BluetoothCardReader::processPINBuffer(byte checksum) {
     // Check PIN values and store if good
     for(int i = 0; i < MAX_PIN_LENGTH; ++i) {
-        Serial.print("  [");
-        Serial.print(i);                
-        Serial.print("] -> ");
-        Serial.println(m_digitBuffer[i], DEC);
-
         if(m_digitBuffer[i] == INVALID_PIN_VALUE) {
             Serial.println("PIN buffer contains invalid value");
             m_status = BT_MODULE_PIN_ERROR;
@@ -117,6 +118,7 @@ void BluetoothCardReader::processPINBuffer(byte checksum) {
     }
 
     m_status = BT_MODULE_HAS_VALID_PIN;
+    memcpy(m_latchedDigits, m_digitBuffer, MAX_PIN_LENGTH);
 }
 
 byte BluetoothCardReader::getChecksum(byte *bytes, int byteCount) {

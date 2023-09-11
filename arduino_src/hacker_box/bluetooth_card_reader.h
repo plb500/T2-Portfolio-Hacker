@@ -42,7 +42,7 @@
 //
 //
 //                          +----------------------------+
-//                          | Incoming byte descriptions |
+//                          | Outgoing byte descriptions |
 //                          +----------------------------+
 //
 // Sequence control bytes (bit 7 HIGH)
@@ -66,7 +66,7 @@ enum CardReaderStatus {
 enum BTModuleStatus {
     BT_MODULE_NO_PIN                = 0,
     BT_MODULE_READING_PIN           = 1,
-    BT_MODULE_HAS_VALID_PIN         = 2,   
+    BT_MODULE_HAS_VALID_PIN         = 2,
     BT_MODULE_PIN_ERROR             = 3
 };
 
@@ -79,25 +79,25 @@ class BluetoothCardReader {
         void reset();
         void update();
         BTModuleStatus getStatus();
+        bool hasPIN();
         byte getPINDigit(int digitIndex);
-        void triggerPINRead();
 
         static const int MAX_PIN_LENGTH        = 4;
         static const byte INVALID_PIN_VALUE    = 'X';
 
     private:    
+        void resetPINBuffer();
         void processControlByte(byte c);
         void processPINByte(byte c);
         void processPINBuffer(byte checksum);
         byte getChecksum(byte *bytes, int byteCount);
 
-        static const byte TRIGGER_PIN_READ      = 0x81;
-        
         int m_txPin, m_rxPin;
         SoftwareSerial m_serialPort;
 
         BTModuleStatus m_status;
         byte m_digitBuffer[MAX_PIN_LENGTH];
+        byte m_latchedDigits[MAX_PIN_LENGTH];
 };
 
 
