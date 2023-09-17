@@ -1,5 +1,7 @@
 # Raspberry Pi powered Cyberdyne keycard/PIN Pad replica
-
+<p align="center">
+  <img src="/docs/graphics/images/cyberdyne-keycard-reader.png" width="75%">
+</p>
 
 ## Materials required
 - Raspberry Pi (a 3B will work) with SD card and Raspberry Pi Lite installed (I used the legacy version)
