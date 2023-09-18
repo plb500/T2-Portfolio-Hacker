@@ -13,7 +13,6 @@ import sys
 
 
 def run_main():
-    serial_port_baud = 9600
     lock_relay_pin = 23
     green_led_pin = 18
     red_led_pin = 4
@@ -24,6 +23,7 @@ def run_main():
     parser.add_argument("-m", "--mock-pins", action="store_true", dest="mock_pins")
     parser.add_argument("-l", "--mock-lcd", action="store_true", dest="mock_lcd")
     parser.add_argument("-s", "--serial-port", dest="serial_port")
+    parser.add_argument("-b", "--baud", type=int, default=9600, dest="baud")
     parser.add_argument("-v", "--cursor-visible", action="store_true", dest="cursor_visible")
 
     args = parser.parse_args()
@@ -60,7 +60,7 @@ def run_main():
     # Outputs (view and hardware)
     hardware_manager = HardwareManager(
         serial_port_name=serial_port,
-        serial_port_baud=serial_port_baud,
+        serial_port_baud=args.baud,
         lock_relay_pin=lock_relay_pin,
         red_led_pin=red_led_pin,
         green_led_pin=green_led_pin,

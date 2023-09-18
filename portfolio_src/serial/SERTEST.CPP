@@ -1,55 +1,47 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <bios.h>
+#include <iostream.h>
+#include "PIN_SER.H"
 
 
-
-#define COM1       0
-#define DATA_READY 0x0100
-
-// Serial port settings: 1200/8/None/1
-#define SETTINGS ( _COM_1200 | _COM_NOPARITY | _COM_CHR8 | _COM_STOP1 )
-
-
-#define BUFFER_SIZE         (128)
-
-char readBuffer[BUFFER_SIZE + 1];
-
-
-int main(void)
-{
-    int status = 0;
-    int done = 0;
-    int readByte = 0;
-    int c;
-    int bufferPos = 0;
-
-    // Open serial port
-    bioscom(0, SETTINGS, COM1);
-
-    fprintf(stdout, "COM1 Opened ([ESC] to exit)....\n");
-    while(!done) {
-        // Get port status
-        status = _bios_serialcom(_COM_STATUS, COM1, 0);
-        if(status & DATA_READY) {
-            // There is data to read
-            readByte = _bios_serialcom(_COM_RECEIVE, COM1, 0);
-            if(readByte > 0x00FF) {
-                fprintf(stdout, "Error reading byte\n");
-            } else {
-                c = (readByte & 0x00FF);
-                if(c == '\x1B') {
-                    done = 1;
-                } else {
-                    readBuffer[bufferPos++] = c;
-                }
-            }
-        } else if(bufferPos) {
-            readBuffer[bufferPos] = 0;
-            fprintf(stdout, "%s", readBuffer);
-            bufferPos = 0;
+int buffersMatch(unsigned char *a, unsigned char *b, int len) {
+    int i = 0;
+    for(i = 0; i < len; ++i) {
+        if(a[i] != b[i]) {
+            return 0;
         }
     }
+
+    return 1;
+}
+
+
+void main() {
+    PINSerialReader pinReader;
+    unsigned char oldPIN[MAX_PIN_LENGTH];
+    unsigned char newPIN[MAX_PIN_LENGTH];
     
-    return 0;
+    for(int i = 0; i < MAX_PIN_LENGTH; ++i) {    
+        oldPIN[i] = INVALID_PIN_VALUE;
+        newPIN[i] = INVALID_PIN_VALUE;
+    }
+    
+    
+    pinReader.init();
+
+    while(1) {
+        pinReader.update();
+        if(pinReader.hasPIN()) {
+            newPIN[0] = pinReader.getPINDigit(0);
+            newPIN[1] = pinReader.getPINDigit(1);
+            newPIN[2] = pinReader.getPINDigit(2);
+            newPIN[3] = pinReader.getPINDigit(3);
+        
+            if(!buffersMatch(newPIN, oldPIN, MAX_PIN_LENGTH)) {
+                cout << "New PIN obtained: ";
+                cout << (int) newPIN[0] << (int) newPIN[1]; 
+                cout << (int) newPIN[2] << (int) newPIN[3] << endl;
+            
+                memcpy(oldPIN, newPIN, MAX_PIN_LENGTH);
+            }
+        }
+    }
 }

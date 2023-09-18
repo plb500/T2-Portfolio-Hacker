@@ -6,7 +6,7 @@ class PINSerialInterface(QObject):
     PIN_SEQUENCE_START = 0x80
     PIN_SEQUENCE_END = 0x81
     RECONNECT_TIME_MS = 500
-    TRANSMIT_TIME_MS = 500
+    TRANSMIT_TIME_MS = 350                      # Transmit the PIN twice a second
 
     def __init__(self, parent, port_name, baudrate):
         super().__init__(parent=parent)
@@ -80,7 +80,9 @@ class PINSerialInterface(QObject):
             checksum ^= digit
             output_byte = (index << 4) | digit
             output_bytes.append(output_byte)
+            output_bytes.append(output_byte)
 
+        output_bytes.append(PINSerialInterface.PIN_SEQUENCE_END | (checksum << 2))
         output_bytes.append(PINSerialInterface.PIN_SEQUENCE_END | (checksum << 2))
 
         return output_bytes
