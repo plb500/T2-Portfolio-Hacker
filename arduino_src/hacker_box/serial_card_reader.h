@@ -1,5 +1,5 @@
-#ifndef __BLUETOOTH_CARD_READER_H__
-#define __BLUETOOTH_CARD_READER_H__
+#ifndef __SERIAL_CARD_READER_H__
+#define __SERIAL_CARD_READER_H__
 
 #include <Arduino.h>
 #include <SoftwareSerial.h>
@@ -63,22 +63,22 @@ enum CardReaderStatus {
 };
 
 // Module status
-enum BTModuleStatus {
-    BT_MODULE_NO_PIN                = 0,
-    BT_MODULE_READING_PIN           = 1,
-    BT_MODULE_HAS_VALID_PIN         = 2,
-    BT_MODULE_PIN_ERROR             = 3
+enum SerialReaderStatus {
+    SERIAL_READER_NO_PIN                = 0,
+    SERIAL_READER_READING_PIN           = 1,
+    SERIAL_READER_HAS_VALID_PIN         = 2,
+    SERIAL_READER_PIN_ERROR             = 3
 };
 
 
-class BluetoothCardReader {
+class SerialCardReader {
     public:
-        BluetoothCardReader(int txPin, int rxPin);
+        SerialCardReader(int txPin, int rxPin);
 
         void init();
         void reset();
         void update();
-        BTModuleStatus getStatus();
+        SerialReaderStatus getStatus();
         bool hasPIN();
         byte getPINDigit(int digitIndex);
 
@@ -95,10 +95,10 @@ class BluetoothCardReader {
         int m_txPin, m_rxPin;
         SoftwareSerial m_serialPort;
 
-        BTModuleStatus m_status;
+        SerialReaderStatus m_status;
         byte m_digitBuffer[MAX_PIN_LENGTH];
         byte m_latchedDigits[MAX_PIN_LENGTH];
 };
 
 
-#endif      // __BLUETOOTH_CARD_READER_H__
+#endif      // __SERIAL_CARD_READER_H__

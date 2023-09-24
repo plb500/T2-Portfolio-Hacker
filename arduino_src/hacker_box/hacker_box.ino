@@ -1,8 +1,8 @@
 #include "portfolio_parallel_port.h"
-#include "bluetooth_card_reader.h"
+#include "serial_card_reader.h"
 
 
-BluetoothCardReader btReader(14, 15);
+SerialCardReader cardReader(14, 15);
 
 PortfolioParallelPort parallelPort = {
     Array<char, 3>({2, 3, 4}),          // Pins for outputting PIN reader status
@@ -13,7 +13,7 @@ PortfolioParallelPort parallelPort = {
 
 
 void setup() {
-    btReader.init();
+    cardReader.init();
     parallelPort.init();
     
     // For testing
@@ -23,43 +23,43 @@ void setup() {
 void loop() {
     // If we are inactive don't process anything
     if(parallelPort.isHardwareInactive()) {
-        btReader.reset();
+        cardReader.reset();
         return;
     }
 
-    btReader.update();
-    if(btReader.hasPIN()) {
+    cardReader.update();
+    if(cardReader.hasPIN()) {
         Serial.print("Box active. PIN obtained:");
-        Serial.print(btReader.getPINDigit(0), DEC);
-        Serial.print(btReader.getPINDigit(1), DEC);
-        Serial.print(btReader.getPINDigit(2), DEC);
-        Serial.println(btReader.getPINDigit(3), DEC);
+        Serial.print(cardReader.getPINDigit(0), DEC);
+        Serial.print(cardReader.getPINDigit(1), DEC);
+        Serial.print(cardReader.getPINDigit(2), DEC);
+        Serial.println(cardReader.getPINDigit(3), DEC);
     }
     
     // Output reader status
-    parallelPort.outputReaderStatus(btReader.getStatus());
+    parallelPort.outputReaderStatus(cardReader.getStatus());
 
     // Check if a PIN digit has been requested
     int requestedDigit = parallelPort.pinDigitRequested();
     if(requestedDigit != PortfolioParallelPort::INVALID_PIN_DIGIT_POSITION) {
-        if(btReader.hasPIN() && (requestedDigit < BluetoothCardReader::MAX_PIN_LENGTH)) {
+        if(cardReader.hasPIN() && (requestedDigit < SerialCardReader::MAX_PIN_LENGTH)) {
             Serial.print("Pin digit ");
             Serial.print(requestedDigit);
             Serial.println(" requested");
 
-            char digitValue = btReader.getPINDigit(requestedDigit);
+            char digitValue = cardReader.getPINDigit(requestedDigit);
             parallelPort.outputPINDigit(digitValue);
         } else {
             Serial.println("ERROR - PIN digit was requested but reader was unable to fulfill request");
 
             Serial.print("Reader status: ");
-            Serial.println(btReader.getStatus());
+            Serial.println(cardReader.getStatus());
         
             Serial.print("Requested digit: ");
             Serial.println(requestedDigit);
 
             Serial.print("Current PIN length: ");
-            Serial.println(BluetoothCardReader::MAX_PIN_LENGTH);
+            Serial.println(SerialCardReader::MAX_PIN_LENGTH);
         }
     }
 }
