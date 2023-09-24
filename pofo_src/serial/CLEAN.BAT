@@ -1,5 +1,0 @@
-@ECHO OFF
-DEL *.OBJ
-DEL *.EXE
-DEL *.DSK
-DEL *.BAK
