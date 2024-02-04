@@ -6,5 +6,10 @@
 - Keypad replica code is [here](keypad)
 - Schematics/code for the electronics box are [here](hack_box)
 
-A project born out of insanity and obsession. 
-When I was a kid I was obsessed with the little omputer John Connor had in T2. I decided to make a "working" prop replica - something that would actually use the Atari Portoflio to "hack" a locked container. This is that.
+A project born out of insanity and obsession.
+</br>
+When I was a kid I was obsessed with the little computer John Connor had in T2. 
+<br/>
+I decided to make a "working" prop replica - something that would actually use the Atari Portoflio to "hack" a locked container. This is that.
+<br/>
+https://www.youtube.com/watch?v=ELD_mX-Tf1Y
