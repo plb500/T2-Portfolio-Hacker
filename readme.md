@@ -7,9 +7,11 @@
 - Schematics/code for the electronics box are [here](hack_box)
 
 A project born out of insanity and obsession.
-</br>
+
 When I was a kid I was obsessed with the little computer John Connor had in T2. 
-<br/>
+
 I decided to make a "working" prop replica - something that would actually use the Atari Portoflio to "hack" a locked container. This is that.
-<br/>
+
+There is MUCH more to this story. Getting a replica of the credit card is a whole story in itself, but I don't have the energy to document all this right now
+
 https://www.youtube.com/watch?v=ELD_mX-Tf1Y
